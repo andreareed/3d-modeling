@@ -1,0 +1,24 @@
+{
+    "name": "3d-modeling-api",
+    "version": "0.1.0",
+    "private": true,
+    "description": "API for 3D Modeling",
+    "main": "index.js",
+    "dependencies": {
+        "@hapi/boom": "^9.1.1",
+        "@hapi/glue": "^8.0.0",
+        "@hapi/hapi": "^20.1.0",
+        "@synapsestudios/hapi-async-validation": "^3.0.0",
+        "knex": "^0.21.18",
+        "nodemon": "^2.0.7",
+        "objection": "^2.2.14",
+        "uuid": "^8.3.2"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "start": "npm install && nodemon",
+        "migrate-seed": "knex migrate:latest && knex seed:latest"
+    },
+    "author": "",
+    "license": "ISC"
+}
